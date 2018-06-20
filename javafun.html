@@ -1,0 +1,74 @@
+<!doctype=html>
+
+<html>
+	<head>
+		<title>Javascript mini projects</title>
+		
+			<link id="pagestyle" type="text/css" href="javafuncss/default.css">
+			<style type="text/css">
+				body{
+					font-family:arial;
+				}
+
+<!--night/daymode		
+				#daymode{
+					background-color:#222222;
+					color:#cccccc;
+				}
+				#nightmode{
+					background-color:#cccccc;
+					color:#222222;
+				}
+				#nightmodeswitch{
+					position:fixed;
+					bottom:0;
+					right:0;
+					width:92px;
+					height:20px;
+					border:2px solid #222222;
+					background-color:DarkOrange;
+				}
+				#nightmodebutton{
+					position:relative;
+					width:100%;
+					height:100%;
+				}
+				-->		
+			</style>
+	</head>
+	
+	<body>
+		
+		<h1>Javascript Projects for Fun/Practice</h1>
+		
+		<div id="nightmodeswitch">
+			<button id="nightmodebutton" onclick="swapDayNight(nightMode = !nightMode)">Night Mode?</button>
+		</div>
+		
+		<script type="text/javascript">
+			
+			var nightMode = false;
+			
+			function swapStyleSheet(sheet) {
+				document.getElementById('pagestyle').setAttribute('href', sheet);
+				}
+			function swapDayNight(){	
+				if (nightMode == false){
+					document.getElementById('nightmodebutton').innerHTML = "Day Mode?";
+					swapStyleSheet('javafun.css/nightmode.css');
+				
+				} else {
+					document.getElementById('nightmodebutton').innerHTML = "Night Mode?";
+					swapStyleSheet('javafuncss/daymode.css');
+					
+				}
+			}
+			
+		/*	document.getElementById(nightmodebutton).onclick = swapDayNight();
+			
+			
+			
+		*/
+		</script>
+	</body>
+</html>
