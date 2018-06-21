@@ -104,7 +104,7 @@
                         fieldsMissing += "<br>Password confirm";
                     }
                     if (fieldsMissing != "") {
-                        fieldsMissing += "<p>The following field(s) are missing:</p>" + fieldsMissing;
+                        errorMessage += "<p>The following field(s) are missing:</p>" + fieldsMissing;
                     }
                     if (isEmail($("#email").val()) == false) {
                         errorMessage+= "<p>Your email address is not valid</p>";
@@ -114,7 +114,7 @@
                         errorMessage += "<p>Your phone number is not numeric</p>";
                     }
                     if ($("#password").val() != $("#passwordConfirm").val()) {
-                        errorMessage += "<p>Your passwords don't match</p>"
+                        errorMessage += "<p>Your passwords don't match</p>";
                     }
                     if(errorMessage != "") {
                         $("#errorMessage").html(errorMessage);
