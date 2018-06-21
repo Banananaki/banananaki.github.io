@@ -48,28 +48,44 @@
 			<a href="http://twitch.tv/banananaki">
 				<img id="twitchlogo" src="twitchlogo.png">
 			</a>
-				<button id="nightbutton" type="button">Toggle Night Mode Off</button>
+				<button id="nightbutton" onclick="toggleNight();">Toggle Night Mode Off</button>
 		</div>
 
 		<script type="text/javascript">
 
-			var nightMode = 1;
+			var nightMode = true;
 
-			$("#nightbutton").click(function() {
-			
-				if (nightMode == 1){
-					$(body).css("background-color", "#111111");
-					$(body).css("color", "#eeeeee");
+			function toggleNight() {
+				if(nightMode == true) {
+					$("body").css("background-color", "#eeeeee");
+					$("body").css("color", "#111111");
 					$("#nightbutton").html("Toggle Night Mode On");
-					nightMode = 0;
+					nightMode = false;
 				} else {
-					$(body).css("background-color", "#eeeeee");
-					$(body).css("color", "#111111");
+					$("body").css("background-color", "#111111");
+					$("body").css("color", "#eeeeee");
 					$("#nightbutton").html("Toggle Night Mode Off");
-					nightMode = 1;
+					nightMode = true;
 				}
+			};
 
-			});
+	/*		$("#nightbutton").click(function toggleNight() {
+
+				alert("Something Happened");
+			
+				if (nightMode == 0){
+					$("body").css("background-color", "#111111");
+					$("body").css("color", "#eeeeee");
+					$("#nightbutton").text("Toggle Night Mode Off");
+					nightMode = 1;
+				} else {
+					$("body").css("background-color", "#eeeeee");
+					$("body").css("color", "#111111");
+					$("#nightbutton").text("Toggle Night Mode On");
+					nightMode = 0;
+				} 
+			};*/
+
 		</script>
 
 	</body>
