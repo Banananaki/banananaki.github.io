@@ -4,52 +4,75 @@
 		<title>
 			~Joshua Roberts' Portfolio of things~
 		</title>
-		
+			<link rel="stylesheet" type="text/css" href="home.css">
+			<link type="text/javascript" href="jquery.min.js">
+			<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Nanum+Gothic|Quicksand" rel="stylesheet">
 		<style type="text/css">
-		
-		body{
-			font-family:arial;
-			background-color: #111111;
-			color:#eeeeee;
-			text-align:center
-		
-		}
-		
-		div {
-			height:0px;
-			width:400px;
-			border:2px dashed #ff6600;
-			margin:16px 0px;
-		}
-		
-		a:hover, a:link, a:visited, a:active {
-			color: #eeeeee;
-			text-decoration:none;
-		}
-		a:hover {
-			font-weight:bold;
-		}
+			body {
+				font-family:"quicksand", "Nanum Gothic", "Didact Gothic", "Arial", "Helvetica", "sans serif";
+			}
+
 
 		</style>
-		
+
 	</head>
 	
 	<body>
 	
 		<h1>Joshua Roberts' Portfolio of sorts.</h1>
-		<br>
+		<div class="divider"></div>
 		<h2></h2>
-		<h2>The Complete Web Development Course 2.0 by Rob Percival - Udemy.com - Projects</h2>
+		<h2>The Complete Web Development Course 2.0 by Rob Percival - Udemy.com<br><br><br>Projects</h2>
+		<div class="divider"></div>
 		<a href="http://banananaki.github.io/pizza.html">Chapter 1 - pizza facts (HTML exercise)</a>
-		<br>
-		<div></div>
-		<br>
+		
+		<div class="divider"></div>
 		<a href="http://banananaki.github.io/bbc.html">Chapter 2 - BBC clone (CSS exercise) </a>
 		<p></p><a href="http://banananaki.github.io/bbcscreen.html">Screenshot of BBC page used above</a>
-		<br>
-		<div></div>
-		<br>
+		<div class="divider"></div>
 		<a href="http://banananaki.github.io/reactiontest.html">Chapter 3 - Reaction speed tester (Javascript Exercise)</a>
+		<div class="divider"></div>
+		<a href="http://banananaki.github.io/formvalidate.html">Chapter 4 - Form Validation (jQuery Exercise</a>
+		<div class="divider"></div>
 	
+		<div id="footer">
+			<a href="http://facebook.com/banananaki">
+				<img id="fblogo"src="fblogo.png">
+			</a>	
+			<a href="http://github.com/banananaki">
+				<img id="githublogo" src="githublogo.png">
+			</a>
+			<a href="http://youtube.com/user/banananaki">
+				<img id="ytlogo" src="ytlogo.png">
+			</a>
+			<a href="http://twitch.tv/banananaki">
+				<img id="twitchlogo" src="twitchlogo.png">
+			</a>
+				<button id="nightbutton">Toggle Night Mode Off</button>
+		</div>
+
+		<script type="text/javascript">
+
+			
+
+			$("nightbutton").click(function(nightMode) {
+			
+			var nightMode = 1;
+			
+				if (nightMode == 1){
+				//	$(body).css("background-color", "#111111");
+				//	$(body).css("color", "#eeeeee");
+					$('nightbutton').html("Toggle Night Mode On");
+					nightMode = 0;
+				} else {
+				//	$(body).css("background-color", "#eeeeee");
+				//	$(body).css("color", "#111111");
+					$('nightbutton').html("Toggle Night Mode Off");
+					nightMode = 1;
+				}
+
+			});
+		</script>
+
 	</body>
 </html>
