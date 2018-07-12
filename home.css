@@ -9,14 +9,16 @@
     margin-bottom:0;
     border-radius:0;
     height:300px;
+    max-height:300px;
 }
 
 .navbar {
 
     background-color:#171717;
     color:mintcream;
-
+    height:50px;
 }
+
 
 /*Actual css styling*/
 
@@ -59,15 +61,15 @@ a:hover {
 }
 
 .footer {
-    max-height:60px;
+    max-height:50px;
     z-index:1;
 }
 .footnote {
     font-size:50%;
 }
 .smalllogo {
-    height:50px;
-    width:50px;
+    height:40px;
+    width:40px;
     padding:0;
     margin:5px;
 }
