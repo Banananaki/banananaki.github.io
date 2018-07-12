@@ -1,0 +1,87 @@
+body{
+    background-color: #111111;
+    color:#eeeeee;
+    text-align:center;
+}
+
+.divider {
+    height:0px;
+    width:500px;
+    border:2px solid #ff6600;
+    position:relative;
+    margin:20px auto;
+}
+
+a:hover, a:link, a:visited, a:active {
+    color: #eeeeee;
+    text-decoration:none;
+}
+
+a:hover {
+    font-weight:bold;
+}
+
+#footer {
+    height:40px;
+    width:100%;
+    border-top:2px solid black;
+    margin:0 auto;
+    background-color:#222222;
+    color:#dddddd;
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index:1;
+}
+
+#fblogo {
+    height:28px;
+    position:fixed;
+    margin:0 auto;
+    z-index:2;
+    position:relative;
+    right:8px;
+    top:5px;
+}
+
+#githublogo {
+    height:28px;
+    position:fixed;
+    margin:0 auto;
+    z-index:2;
+    position:relative;
+    right:4px;
+    top:5px;
+}
+
+#ytlogo {
+    height:28px;
+    position:fixed;
+    margin:0 auto;
+    z-index:2;
+    position:relative;
+    left:2px;
+    top:5px;
+}
+
+#twitchlogo {
+    height:28px;
+    position:fixed;
+    margin:0 auto;
+    z-index:2;
+    position:relative;
+    left:6px;
+    top:5px;
+}
+
+#nightbutton {
+    position:fixed;
+    bottom:2px;
+    right:2px;
+    height:34px;
+    width:100px;
+    font-size:10pt;
+    background-color:black;
+    color:white;
+    border:1px solid #cccccc;
+}

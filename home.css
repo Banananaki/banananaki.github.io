@@ -1,15 +1,47 @@
-body{
-    background-color: #111111;
-    color:#eeeeee;
+/* Bootstrap CSS */
+.jumbotron {
+
+    font-family:"quicksand", "Nanum Gothic", "Didact Gothic", "Arial", "Helvetica", "sans serif";
+    text-align:center;
+    background-image:url(images/rain.jpg);
+    background-size: cover;
+    color:mintcream;
+    margin-bottom:0;
+    border-radius:0;
+    height:300px;
+}
+
+.navbar {
+
+    background-color:#171717;
+    color:mintcream;
+
+}
+
+/*Actual css styling*/
+
+html{
+
+    font-family:"quicksand", "Nanum Gothic", "Didact Gothic", "Arial", "Helvetica", "sans serif";
+
+}
+
+body {
+    
+    background-color:#111111;
+    color:mintcream;
+    font-family:"quicksand", "Nanum Gothic", "Didact Gothic", "Arial", "Helvetica", "sans serif";
+    padding-bottom:70px;
+}
+
+h2 {
     text-align:center;
 }
 
-.divider {
-    height:0px;
-    width:500px;
-    border:2px solid #ff6600;
-    position:relative;
-    margin:20px auto;
+h2 h3 h4 h5 h6 {
+
+    font-family:"quicksand", "Nanum Gothic", "Didact Gothic", "Arial", "Helvetica", "sans serif";
+
 }
 
 a:hover, a:link, a:visited, a:active {
@@ -21,67 +53,36 @@ a:hover {
     font-weight:bold;
 }
 
-#footer {
-    height:40px;
-    width:100%;
-    border-top:2px solid black;
+.center {
+    text-align:center;
     margin:0 auto;
-    background-color:#222222;
-    color:#dddddd;
-    position:fixed;
-    bottom:0;
-    left:0;
+}
+
+.footer {
+    max-height:60px;
     z-index:1;
 }
-
-#fblogo {
-    height:28px;
-    position:fixed;
-    margin:0 auto;
-    z-index:2;
-    position:relative;
-    right:8px;
-    top:5px;
+.footnote {
+    font-size:50%;
+}
+.smalllogo {
+    height:50px;
+    width:50px;
+    padding:0;
+    margin:5px;
 }
 
-#githublogo {
-    height:28px;
-    position:fixed;
-    margin:0 auto;
-    z-index:2;
-    position:relative;
-    right:4px;
-    top:5px;
+.largelogo{
+    height:200px;
+    width:200px;
 }
 
-#ytlogo {
-    height:28px;
-    position:fixed;
-    margin:0 auto;
-    z-index:2;
+.ojline {
+    border: 2px darkorange solid;
+    width:500px;
+    height:0px;
     position:relative;
-    left:2px;
-    top:5px;
-}
+    margin:20px auto;
 
-#twitchlogo {
-    height:28px;
-    position:fixed;
-    margin:0 auto;
-    z-index:2;
-    position:relative;
-    left:6px;
-    top:5px;
-}
 
-#nightbutton {
-    position:fixed;
-    bottom:2px;
-    right:2px;
-    height:34px;
-    width:100px;
-    font-size:10pt;
-    background-color:black;
-    color:white;
-    border:1px solid #cccccc;
 }
