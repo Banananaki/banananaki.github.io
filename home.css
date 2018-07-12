@@ -8,8 +8,9 @@
     color:mintcream;
     margin-bottom:0;
     border-radius:0;
-    height:300px;
-    max-height:300px;
+ /*   height:300px;
+    max-height:300px;*/
+    min-height:300px;
 }
 
 .navbar {
