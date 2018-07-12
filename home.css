@@ -5,11 +5,11 @@
     text-align:center;
     background-image:url(images/rain.jpg);
     background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
     color:mintcream;
     margin-bottom:0;
     border-radius:0;
- /*   height:300px;
-    max-height:300px;*/
     min-height:300px;
 }
 
@@ -21,6 +21,22 @@
 }
 
 
+
+@media (max-width: 576px) {
+    html { font-size: .8rem; }
+}
+@media (min-width: 576px) {
+    html { font-size: .85rem; }
+}
+@media (min-width: 768px) {
+    html { font-size: .9rem; }
+}
+@media (min-width: 992px) {
+    html { font-size: .95rem; }
+}
+@media (min-width: 1200px) {
+    html { font-size: 1rem; }
+}
 /*Actual css styling*/
 
 html{
@@ -86,6 +102,4 @@ a:hover {
     height:0px;
     position:relative;
     margin:20px auto;
-
-
 }
